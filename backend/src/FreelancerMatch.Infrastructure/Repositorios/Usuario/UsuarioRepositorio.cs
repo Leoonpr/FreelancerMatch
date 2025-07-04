@@ -7,6 +7,7 @@ namespace FreelancerMatch.Infrastructure.Repositorios.Usuario
     {
         public UsuarioRepositorio(AppDbContext context) : base(context)
         {
+            
         }
 
     }

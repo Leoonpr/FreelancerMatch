@@ -11,6 +11,9 @@ namespace FreelancerMatch.Infrastructure.Db
 
         public DbSet<Usuario> Usuarios { get; set; }
 
+
+        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
