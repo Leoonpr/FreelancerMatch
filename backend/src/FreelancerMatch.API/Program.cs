@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Chama os métodos de extensão para registrar tudo de cada camada
 builder.Services.AddInfrastructureLayer(builder.Configuration);
 builder.Services.AddApplicationLayer();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
 
 // Adicionar outros serviços que pertencem à camada de Apresentação (API)
 builder.Services.AddControllers();
